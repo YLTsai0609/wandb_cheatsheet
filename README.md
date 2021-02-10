@@ -66,6 +66,26 @@ wandb.finish()
 
 There are backup hash-key and log automatically generated when you running wandb trial.
 
+The headline is yulong's question and solution, 
+
+**star** means unsolved.
+
+# Best Practices
+
+1. **Projects**: Log multiple runs to a project to compare them. `wandb.init(project="project-name")`
+2. **Groups**: For multiple processes or cross validation folds, log each process as a runs and group them together. `wandb.init(group='experiment-1')`
+3. **Tags**: Add tags to track your current baseline or production model.
+4. **Notes**: Type notes in the table to track the changes between runs.
+5. **Reports**: Take quick notes on progress to share with colleagues and make dashboards and snapshots of your ML projects.
+
+### Advanced Setup
+
+1. [Environment variables](https://docs.wandb.com/library/environment-variables): Set API keys in environment variables so you can run training on a managed cluster.
+2. [Offline mode](https://docs.wandb.com/library/technical-faq#can-i-run-wandb-offline): Use `dryrun` mode to train offline and sync results later.
+3. [On-prem](https://docs.wandb.com/self-hosted): Install W&B in a private cloud or air-gapped servers in your own infrastructure. We have local installations for everyone from academics to enterprise teams.
+4. [Sweeps](https://docs.wandb.com/sweeps): Set up hyperparameter search quickly with our lightweight tool for tuning.
+5. [Artifacts](https://docs.wandb.com/artifacts): Track and version models and datasets in a streamlined way that automatically picks up your pipeline steps as you train models.
+
 # 01 keras hello world
 
 There is a wandb callback for keras : 
@@ -77,6 +97,16 @@ It's custom for keras model callback argument.
 
 You can log a dictionary-like (python native data structure which can be serielized to JSON) to wandb.
 
-# 03 exporting data from account to make a local plot
+you do actually log json, image and table.
+
+check [Intro notebook](bit.ly/intro-wb)
+
+# *03 exporting data from account to make a local plot
 
 Once we wanna plot a more beautiful plot (like to submit a paper), we need this feature.
+
+# *04 versioning data, model and result across your pipeline
+
+check [here](https://docs.wandb.ai/artifacts)
+
+https://wandb.ai/stacey/deep-drive?workspace=default
