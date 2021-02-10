@@ -1,13 +1,13 @@
 # Wandb
 
-A server/client based model experiments platform. Which makes 
+A server/client based experiments management platform. Which makes 
 
-1. your experiments management more efficent.
-2. more easiler to sharing your finding.
-3. more easiler to compare the result of different trials.
+1. your experiments management more efficent.(dashboard)
+2. more easiler to sharing your finding.(report)
+3. more easiler to compare the result of different trials.(dashboard)
 
 It provides us the ability to track the data pipelines, datasets, and models. 
-We can get the report of certain analytics of datasets, data pipeplines. Also the committer.
+We can get the report of certain analytics of datasets, data pipeplines. Also the committer.(artifacts)
 
 Wandb seems a tool to make MLops easiler!
 
@@ -18,7 +18,6 @@ Wandb seems a tool to make MLops easiler!
 # Installation and login
 
 ``` 
-
 pip install wandb
 wandb login
 ```
