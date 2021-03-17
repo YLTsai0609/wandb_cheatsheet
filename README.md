@@ -18,6 +18,7 @@ Wandb seems a tool to make MLops easiler!
 # Installation and login
 
 ``` 
+
 pip install wandb
 wandb login
 ```
@@ -109,3 +110,7 @@ Once we wanna plot a more beautiful plot (like to submit a paper), we need this 
 check [here](https://docs.wandb.ai/artifacts)
 
 https://wandb.ai/stacey/deep-drive?workspace=default
+
+# *05 dryrun mode to make sure the wandb setting work
+
+just put environment variable : WANDB_MODE=dryrun
