@@ -21,9 +21,12 @@ from wandb.keras import WandbCallback
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
+# h5py might cause some io error
+# https://groups.google.com/g/h5py/c/0kgiMVGSTBE?pli=1
+os.environ['HDF5_USE_FILE_LOCKING'] = 'FALSE'
 # Initialize wandb and save hyperparameters
 wandb.init(
-    project="sample-project",
+    project="pix_titan_sample_project",
     config={
         "method": 'NORM_1',
         "dropout": 0.2,
