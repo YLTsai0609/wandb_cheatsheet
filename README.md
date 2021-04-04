@@ -111,6 +111,12 @@ check [here](https://docs.wandb.ai/artifacts)
 
 https://wandb.ai/stacey/deep-drive?workspace=default
 
-# *05 dryrun mode to make sure the wandb setting work
+# 05 dryrun mode to make sure the wandb setting work
 
 just put environment variable : WANDB_MODE=dryrun
+
+# 06 log a confusition matrix on wandb dashboard
+
+extend the callback and use it.
+
+[check this report](https://wandb.ai/mathisfederico/wandb_features/reports/Better-visualizations-for-classification-problems--VmlldzoxMjYyMzQ)
