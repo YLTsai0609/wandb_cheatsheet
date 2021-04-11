@@ -120,3 +120,12 @@ just put environment variable : WANDB_MODE=dryrun
 extend the callback and use it.
 
 [check this report](https://wandb.ai/mathisfederico/wandb_features/reports/Better-visualizations-for-classification-problems--VmlldzoxMjYyMzQ)
+
+## custom callback
+
+# Validating
+
+[ ] - git checkout to get your code
+[ ] - upload a json file
+[ ] - write report
+[ ] - upload a matplotlib plot
