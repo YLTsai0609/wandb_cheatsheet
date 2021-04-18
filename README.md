@@ -15,6 +15,7 @@ Wandb seems a tool to make MLops easiler!
 
 [Wandb - Weights and Biases documentation](https://docs.wandb.ai/)
 
+[Wandb - examples](https://github.com/wandb/examples)
 # Installation and login
 
 ``` 
@@ -121,7 +122,12 @@ extend the callback and use it.
 
 [check this report](https://wandb.ai/mathisfederico/wandb_features/reports/Better-visualizations-for-classification-problems--VmlldzoxMjYyMzQ)
 
-## custom callback
+check the doc of 03_custom_callback
+
+we can modify the callback so that we can log any metrics we want including(dataframe)
+
+[example](https://github.com/YLTsai0609/bert_ner/blob/main/f1_wandbcallback.py) : log precision, recall, f1-score by integraing EvalCallback in `kashgari` and WandbCallback
+
 
 # Validating
 
