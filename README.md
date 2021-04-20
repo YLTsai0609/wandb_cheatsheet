@@ -129,9 +129,15 @@ we can modify the callback so that we can log any metrics we want including(data
 [example](https://github.com/YLTsai0609/bert_ner/blob/main/f1_wandbcallback.py) : log precision, recall, f1-score by integraing EvalCallback in `kashgari` and WandbCallback
 
 
-# Validating
+# 使用心得
 
-[ ] - git checkout to get your code
-[ ] - upload a json file
-[ ] - write report
-[ ] - upload a matplotlib plot
+## Good
+[ ] - (推) 可輕易比較Cross-run的performance，code version，data version，terminal message，hyperparameters
+[ ] - 可realtime追蹤訓練進度(streamming by per repch / smaller checkpoint)
+[ ] - 可基於已知的hyperparameter畫圖，協助推斷最佳hyperparameter
+
+## Bad
+
+1. callback - Image的支援比較多，包含(隨著模型訓練，觀察樣本的預測)
+2. callback - 要做數值外的分析，比較複雜，要繼承`WandbCallback`自己實作想要的內容，想辦法用plotly呈現，會花費額外開發時間
+3. model-saving-checkpoint - 很多時候測試SOTA模型(非標準模型，都有客製化object)，目前還沒看到從哪裡改callback比較快
